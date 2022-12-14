@@ -4,6 +4,7 @@
 
 .features__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -14,10 +15,25 @@
     text-transform: uppercase;
     color: var(--subtitle-text-color);
     margin-bottom: 10px;
+    text-align: center;
+    @media screen and (min-width:768px) {
+        text-align: start;
+    }
 }
 
+// .features__item {
+//     flex-basis: calc((100% - 90px) / 4);
+// }
+
 .features__item {
-    flex-basis: calc((100% - 90px) / 4);
+    width: 100%;
+    @media screen and (min-width:768px) {
+        width: calc((100% - 30px) / 2);     
+    }
+
+    @media screen and (min-width:1200px) {
+        width: calc((100% - 90px) / 4)
+    }
 }
 
 .features__text {
