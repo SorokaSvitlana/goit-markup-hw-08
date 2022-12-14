@@ -3,7 +3,7 @@
 }
 
 .footer__input-email {
-    width: 358px;
+    // width: 358px;
     padding: 16px;
     background-color: transparent;
     color: #ffffff;
@@ -16,6 +16,11 @@
         border-color: #2196f3;
         outline: none;
     }
+
+    width: 100%;
+    margin-bottom: 20px;
+
+
 }
 
 .footer__btn {
@@ -44,4 +49,12 @@
 .footer__input {
     display: flex;
     margin-top: 20px;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    // @media screen and (min-width:768px) {
+    //     display: flex;
+    // }
 }
