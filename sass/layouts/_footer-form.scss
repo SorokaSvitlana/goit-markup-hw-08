@@ -1,9 +1,17 @@
 .footer__form {
     margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+        @media screen and (min-width:1200px) {
+           display: block;
+     }
 }
 
 .footer__input-email {
-    // width: 358px;
+    
     padding: 16px;
     background-color: transparent;
     color: #ffffff;
@@ -17,13 +25,18 @@
         outline: none;
     }
 
-    width: 100%;
+    width: 450px;
     margin-bottom: 20px;
 
-
+    @media screen and (min-width:1200px) {
+        width: 358px;
+        margin-bottom: 0;
+    }
 }
 
 .footer__btn {
+    width: 200px;
+    height: 50px;
     display: flex;
     align-items: center;
     margin-left: 12px;
@@ -54,7 +67,14 @@
     justify-content: center;
     flex-direction: column;
 
-    // @media screen and (min-width:768px) {
-    //     display: flex;
-    // }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 450px;
+    }
+
+     @media screen and (min-width: 1200px) {
+        align-items: unset;
+        justify-content: flex-start;
+        flex-direction: unset;
+    }
+
 }

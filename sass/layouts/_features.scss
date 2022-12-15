@@ -1,4 +1,9 @@
-
+    @media screen and (min-width:1200px)  {
+        .features.section {
+            padding-bottom: 0;
+        }
+    
+    }
 
 .features__list {
     display: flex;
@@ -18,10 +23,6 @@
         text-align: start;
     }
 }
-
-// .features__item {
-//     flex-basis: calc((100% - 90px) / 4);
-// }
 
 .features__item {
     width: 100%;
