@@ -18,6 +18,10 @@
     padding-bottom: 60px;
 }
 
+.footer__form-field {
+    width: 100%;
+}
+
 .footer__wrap {
     @media screen and (min-width: 768px) {
     display: flex;
@@ -43,6 +47,7 @@
     @media screen and (min-width: 768px) and  (max-width: 1199px) {
         margin-right: 155px;
         margin-left: 69px;
+        text-align: center;
     }
 
 }
@@ -86,6 +91,10 @@
 
     text-align: center;
     display: block;
+
+    @media screen and (min-width: 1199px) {
+            text-align:unset;
+        }
 }
 
 .footer__soc-item {

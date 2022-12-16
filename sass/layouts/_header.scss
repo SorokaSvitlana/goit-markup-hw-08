@@ -53,7 +53,7 @@
     }
 
     @media screen and (min-width:1200px) {
-        
+    gap: 30px;
     }
 }
 
@@ -135,13 +135,15 @@
     background: #fff;
     padding-bottom: 48px;
     z-index: 1; 
+    padding: 48px 40px;
     
     > .container {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: auto;
+    // overflow: auto;
+    padding: 0;
 }
 }
 
@@ -163,8 +165,9 @@
 }
 
 .menu-close {
-margin-top: 10px;
-margin-right: 15px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
 
     padding: 0;
     background-color: rgba(0, 0, 0, 0);
@@ -208,6 +211,7 @@ margin-right: 15px;
 .mobsocials {
     display: flex;
     gap: 20px;
+    overflow: auto;
 }
 
 
@@ -218,16 +222,14 @@ margin-right: 15px;
         margin-bottom: 306px;
 }
 
-.mobmenu__item {
-    margin-left: 25px;
-}
+// .mobmenu__item {
+//     margin-left: 25px;
+// }
 
 .mobmenu__item:not(:last-child) {
     margin-bottom: 32px;
 }
-.mobsocials {
-    margin-left: 25px;
-}
+
 
 .mobsocials__link {
     font-weight: 500;
@@ -245,7 +247,7 @@ margin-right: 15px;
 
 .mobmenu-info {
     margin-bottom: 64px;
-    margin-left: 25px;
+    // margin-left: 25px;
 }
 
 
@@ -262,7 +264,7 @@ margin-right: 15px;
 
 .mobmenu__link {
     display: block;
-    padding: 10px;
+    // padding: 10px;
     font-weight: 500;
     font-size: 40px;
     line-height: 1.175;
